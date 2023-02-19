@@ -11,3 +11,6 @@ jobs:
 
       - name: check docker version
         run: docker --version
+        
+      - name: check Lima  version
+        run: limactl --version
