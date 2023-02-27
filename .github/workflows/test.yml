@@ -13,5 +13,5 @@ jobs:
         run: gh --version
       - name: Github cli Version
         run:  |
-              gh auth login --with-token c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
+            gh repo clone https://github.com/KPMG-UK/terraform-az-blob-clamav.git
 
