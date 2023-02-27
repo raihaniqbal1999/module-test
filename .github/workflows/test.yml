@@ -12,4 +12,4 @@ jobs:
       - name: Github cli Version
         run: gh --version
       - name: Github cli Version
-        run: gh auth login 
+        run: echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
