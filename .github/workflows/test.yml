@@ -14,4 +14,6 @@ jobs:
       - name: Github cli Version
         run:  |
             gh repo clone https://github.com/KPMG-UK/terraform-az-blob-clamav.git
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
