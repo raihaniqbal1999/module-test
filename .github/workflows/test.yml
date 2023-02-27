@@ -9,3 +9,5 @@ jobs:
         run: docker --version
       - name: Git Version
         run: git --version
+      - name: Github cli Version
+        run: gh --version
