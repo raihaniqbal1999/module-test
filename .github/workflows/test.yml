@@ -12,7 +12,8 @@ jobs:
       - name: Github cli Version
         run: gh --version
       - name: Github cli Version
-        run: gh issue create --title "My new issue" --body "Here are more details."
+        run: gh auth login
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: ${{ secrets.GH_USERNAME }}
+          GH_PWD: ${{ secrets.GH_PWD }}
 
