@@ -12,4 +12,4 @@ jobs:
       - name: Github cli Version
         run: gh --version
       - name: Github cli Version
-        run: gh auth login --with-token c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
+        run: gh auth login 
