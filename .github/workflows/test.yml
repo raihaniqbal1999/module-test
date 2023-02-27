@@ -12,8 +12,7 @@ jobs:
       - name: Github cli Version
         run: gh --version
       - name: Github cli Version
-        run:  |
-            gh repo clone https://github.com/KPMG-UK/terraform-az-blob-clamav.git
+        run: gh issue create --title "My new issue" --body "Here are more details."
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
