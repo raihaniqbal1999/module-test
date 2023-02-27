@@ -11,7 +11,7 @@ jobs:
         run: git --version
       - name: Github cli Version
         run: gh --version
-      - name: Github cli Version
+      - name: Github Clone
         run: gh repo clone https://github.com/KPMG-UK/terraform-az-blob-clamav.git
         env:
           GH_USERNAME: ${{ secrets.GH_USERNAME }}
