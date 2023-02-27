@@ -12,10 +12,8 @@ jobs:
       - name: Github cli Version
         run: gh --version
       - name: Github Clone
-        run: gh repo clone KPMG-UK/terraform-az-blob-clamav
+        run: gh auth login --with-token
         env:
-          GH_USERNAME: ${{ secrets.GH_USERNAME }}
-          GH_PWD: ${{ secrets.GH_PWD }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 
