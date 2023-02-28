@@ -12,22 +12,6 @@ jobs:
       - name: Github cli Version
         run: gh --version
       - name: Github Clone
-        run: gh auth login --with-token
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Github Clone
-      - run: |
-          cat <<EOF > creds
-          #!/bin/sh
-           echo protocol=https
-           echo host=github.com
-           echo username=foo
-           echo password=${GH_TOKEN}
-           EOF
-           sudo install creds /usr/local/bin/creds
-           git config --global credential.helper "creds"
-        env:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
+        run: gh auth login --web
 
 
